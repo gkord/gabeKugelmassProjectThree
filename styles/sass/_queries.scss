@@ -1,0 +1,6 @@
+@mixin mq-tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+    
+}

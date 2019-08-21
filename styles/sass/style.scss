@@ -1,0 +1,10 @@
+@import "setup";
+@import "queries";
+
+
+body{
+    background: skyblue;
+    @include mq-tablet {
+        background: green;
+    }
+}
