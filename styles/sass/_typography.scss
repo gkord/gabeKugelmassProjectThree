@@ -1,0 +1,23 @@
+$headerFont: 'Rye', sans-serif;
+$mainFont: 'Amatic SC', sans-serif;
+
+h2 {
+    font-family: $mainFont;
+    color: white;
+    font-size: 26px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.result h2{
+    color: black;
+}
+
+header p {
+    font-family: $mainFont;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+}

@@ -179,12 +179,346 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-body {
-  background: skyblue;
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  body {
-    background: green;
+fieldset {
+  border: none;
+}
+
+i {
+  font-size: 80px;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+i:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:focus {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+input[type=radio] {
+  position: absolute;
+  left: -9999px;
+}
+
+.submitContainer {
+  margin-top: 50px;
+}
+
+h2 {
+  font-family: "Amatic SC", sans-serif;
+  color: white;
+  font-size: 26px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.result h2 {
+  color: black;
+}
+
+header p {
+  font-family: "Amatic SC", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: #63032e;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+header button {
+  background: #63032e;
+  border: none;
+}
+
+header button p {
+  font-family: "Amatic SC", sans-serif;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  font-family: "Rye", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 64px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.questionOneContainer {
+  background: #7a4044;
+  text-align: center;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  padding: 50px 0px;
+}
+
+.questionOneContainer button {
+  background: #7a4044;
+  border: none;
+}
+
+.questionOneContainer button h2 {
+  margin: 0;
+  padding: 20px;
+}
+
+.moodForm {
+  max-width: 100%;
+}
+
+.userMood {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+}
+
+.questionOneContainer label {
+  background: white;
+  height: 120px;
+  width: 120px;
+  padding: 20px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: hover 1s ease;
+  transition: hover 1s ease;
+}
+
+.questionOneContainer label:hover {
+  background: lightgrey;
+  cursor: pointer;
+}
+
+input[type=radio]:checked + label {
+  background: yellow;
+}
+
+.result {
+  text-align: center;
+}
+
+.questionTwoContainer {
+  background: #c39393;
+  max-width: 100%;
+  text-align: center;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0px;
+}
+
+.questionTwoContainer button {
+  background: #c39393;
+  border: none;
+  margin-top: 20px;
+}
+
+.questionTwoContainer button h2 {
+  margin: 0;
+  padding: 20px;
+}
+
+.wineForm {
+  width: 100%;
+}
+
+.userDrink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 100%;
+}
+
+.box {
+  width: 33%;
+}
+
+.wrap {
+  text-align: center;
+}
+
+.glass {
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 0px 0px 50% 50%;
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(0, 222, 255, 0.3);
+}
+
+.glass:hover {
+  cursor: pointer;
+}
+
+.redGlass::after {
+  content: "";
+  width: 100px;
+  height: 50px;
+  border-radius: 0px 0px 100px 100px;
+  display: block;
+  z-index: -1;
+  background-color: rgba(0, 222, 255, 0);
+  -webkit-transition: background 1s ease-in;
+  transition: background 1s ease-in;
+}
+
+.redGlass:hover::after {
+  background-color: #722f37;
+  cursor: pointer;
+}
+
+.whiteGlass::after {
+  content: "";
+  width: 100px;
+  height: 50px;
+  border-radius: 0px 0px 100px 100px;
+  display: block;
+  z-index: -1;
+  background-color: rgba(0, 222, 255, 0);
+  -webkit-transition: background 1s ease-in;
+  transition: background 1s ease-in;
+}
+
+.whiteGlass:hover::after {
+  background-color: #f1f285;
+  cursor: pointer;
+}
+
+.otherGlass::after {
+  content: "";
+  width: 100px;
+  height: 50px;
+  border-radius: 0px 0px 100px 100px;
+  display: block;
+  z-index: -1;
+  background-color: rgba(0, 222, 255, 0);
+  -webkit-transition: content 1s ease-in;
+  transition: content 1s ease-in;
+}
+
+.otherGlass:hover::after {
+  cursor: pointer;
+}
+
+.stem {
+  margin: 0 auto;
+  height: 75px;
+  width: 10px;
+  background-color: rgba(0, 222, 255, 0.3);
+  border-bottom: 2px solid #009bb3;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.base {
+  margin: 0 auto;
+  margin-top: -6px;
+  width: 100px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(0, 222, 255, 0.3);
+}
+
+@media (max-width: 1065px) {
+  .userMood {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 565px) {
+  .userMood {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }

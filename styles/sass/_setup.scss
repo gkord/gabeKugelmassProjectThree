@@ -5,3 +5,51 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+}
+
+i {
+    font-size: 80px;
+    transition: transform 500ms ease;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+i:hover{
+    transform: rotate(45deg);
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:link{
+  color:black;
+}
+a:visited{
+  color:black;
+}
+a:hover{
+  color:black;
+}
+a:focus{
+  color:black;
+}
+a:active{
+  color:black;
+}
+
+input[type=radio]{
+  position: absolute;
+  left: -9999px;
+}
+
+.submitContainer {
+  margin-top: 50px;
+}
