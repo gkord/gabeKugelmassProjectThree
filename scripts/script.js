@@ -483,7 +483,7 @@ wineApp.smoothScroll= function(){
         const wineArray = wineObject[wineApp.userMood];
         const wineSelection = getRandomNumberFromArray(wineArray);
         //display results on the screen
-        $('.result').html(`<h2 class="choice">${wineSelection.varietal}</h2>`);
+        $('.result').html(`<h2 class="choice" id="result">${wineSelection.varietal}</h2>`);
         $('.result').append(`<p>${wineSelection.description}</p>`);
         $('.result').append(`<figure><img src="${wineSelection.img}" alt="${wineSelection.alt}"></figure>`);
         $('.result').append(`<div class="buttonContainer"><button class="newMood"><h3>Choose a different mood</h3></button></div>`);
