@@ -534,10 +534,31 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .result p {
   font-size: 2rem;
+}
+
+.newMood, .reset {
+  background: #CCB1B3;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.result h2 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (max-width: 1065px) {

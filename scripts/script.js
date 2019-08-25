@@ -73,7 +73,7 @@ wineApp.wineChoice = {
             {
                 varietal: 'Gamay',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                url: '/assets/chateau-des-jacques-morgon_grande.png'
+                img: './assets/chateau-des-jacques-morgon.png'
             }  
         ],
         celebratory: [
@@ -334,21 +334,25 @@ wineApp.smoothScroll= function(){
         const wineSelection = getRandomNumberFromArray(wineArray);
         //display results on the screen
         $('.result').html(`<h2 class="choice">${wineSelection.varietal}</h2>`);
-        $('.result').append(`<p>${wineSelection.description}</p>`)
-        $('.result').append(`<figure><img src="${wineSelection.img}"></figure>`)
-        $('.result').append(`<button class="reset">Choose a different mood</button>`);
-        $('.result').on('click', '.reset', function () {
+        $('.result').append(`<p>${wineSelection.description}</p>`);
+        $('.result').append(`<figure><img src="${wineSelection.img}"></figure>`);
+        $('.result').append(`<div class="buttonContainer"><button class="newMood"><h2>Choose a different mood</h2></button></div>`);
+        $('.buttonContainer').append(`<button class="reset"><h2>Reset</h2></button>`);
+        $('.result').on('click', '.newMood', function () {
             $('form').trigger('reset');
             $("html, body").animate({ scrollTop: $('.questionOneContainer').offset().top }, 1000);
         });
-    })
-}
+        $('.reset').on('click', function() {
+            location.reload(true);
+        });
+    });
+};
 
 //APP INIT FUNCTION
     wineApp.init = function(){
         wineApp.smoothScroll();
         wineApp.getWine();
-    }
+    };
 
 //DOC READY
     
