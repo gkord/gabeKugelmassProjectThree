@@ -1,15 +1,26 @@
 $headerFont: 'Rye', sans-serif;
 $mainFont: 'Amatic SC', sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
 
-h2 {
+h3 {
     font-family: $mainFont;
     color: white;
-    font-size: 26px;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.questionOneContainer h2,
+.questionTwoContainer h2 {
+    font-family: $mainFont;
+    color: white;
+    font-size: 3.6rem;
     text-shadow: 2px 2px 4px #000000;
 }
 
 .result h2{
+    font-family: $mainFont;
     color: black;
+    font-size: 3.6rem;
 }
 
 header p {
@@ -20,4 +31,26 @@ header p {
 
 label {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+p.red {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    color: #722f37;
+    text-transform: uppercase;
+}
+
+p.white {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    color: #f1f285;
+    text-transform: uppercase;
+}
+
+p.other {
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    color: #000000;
+    text-transform: uppercase;
 }

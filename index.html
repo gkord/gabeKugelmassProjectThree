@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
@@ -12,21 +16,27 @@
     <title>Mood Sommelier</title>
 </head>
 <body>
+    <a href="#sectionOne" class="skip-link">Skip to First Question.</a>
     <header>
-        <h1>Mood Sommelier</h1>
-
-        <h2>Click the bottle to get started</h2>
-
-        <div>
-            <button>
-                <a href="#sectionOne"><i class="fas fa-wine-bottle"></i></a>
-            </button>
+        <div class="wrapper">
+            <div class="title">
+                <img class="titleGlassLeft" src="./assets/icons8-wine-glass-480.png" alt="">
+                <h1>Mood Sommelier</h1>
+                <img class="titleGlassRight" src="./assets/icons8-wine-glass-480.png" alt="">
+            </div>
+            <h3>Click the bottle to get started</h3>
+    
+            <div>
+                <button>
+                    <a href="#sectionOne"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt=""></i></a>
+                </button>
+            </div>
         </div>
     </header>
 
-    <div class="questionOneContainer" id="sectionOne">
-        <h2>Describe your current mood</h2>
-        <form class="moodForm" action="">
+    <section class="questionOneContainer">
+        <h2 id="sectionOne">Describe your current mood</h2>
+        <form class="moodForm wrapper" action="">
             <fieldset class="userMood">
                     <div class="inputContainer">
                         <input id="reflective" type="radio" name="mood" value="reflective">
@@ -49,8 +59,8 @@
                         <label for="celebratory">Celebratory</label>
                     </div>
                     <div class="inputContainer">
-                        <input id="silly" type="radio" name="mood" value="silly">
-                        <label for="silly">Silly</label>
+                        <input id="adventurous" type="radio" name="mood" value="adventurous">
+                        <label for="adventurous">Adventurous</label>
                     </div>
                     <div class="inputContainer">
                         <input id="mellow" type="radio" name="mood" value="mellow">
@@ -65,60 +75,47 @@
 
         <div class="submitContainer">
             <button type="text" class="submitMood">
-                <a href="#sectionTwo"><i class="fas fa-wine-bottle"></i></a>
+                <a href="#sectionTwo"><i class="fas fa-chevron-down"></i></a>
             </button>
         </div>
-    </div>
+    </section>
 
-    <div class="questionTwoContainer" id="sectionTwo">
+    <section class="questionTwoContainer" id="sectionTwo">
         <h2>What is your wine preference?</h2>
-        <form class="wineForm" action="">
+        <form class="wineForm wrapper" action="">
             <fieldset class="userDrink">
                 <div class="box">
                     <input id="red" type="radio" name="drink" value="red">
                     <label for="red">
-                        <div class="wrap">
-                            <div class="glass redGlass"></div>
-                            <div class="stem"></div>
-                            <div class="base"></div>
-                            <p>Red</p>
-                        </div>
+                        <img src="./assets/icons8-wine-glass-240(2).png" alt="">
                     </label>
                 </div>
                 <div class="box">
                     <input id="white" type="radio" name="drink" value="white">
                 	<label for="white">
-                	     <div class="wrap">
-                	        <div class="glass whiteGlass"></div>
-                	        <div class="stem"></div>
-                            <div class="base"></div>
-                            <p>White</p>
-                	    </div>
+                        <img src="./assets/icons8-wine-glass-240(3).png" alt="">
                 	</label>
                 </div> 
                 <div class="box">
                     <input id="other" type="radio" name="drink" value="other">
                     <label for="other">
-                        <div class="wrap">
-                            <div class="glass otherGlass"></div>
-                            <div class="stem"></div>
-                            <div class="base otherBase"></div>
-                            <p>Other</p>
-                        </div>
+                        <img src="./assets/icons8-wine-glass-240(4).png" alt="">
                     </label>
                 </div>
             </fieldset>
         </form>
 
+        <h3>Click the bottle for your result</h3>
+
         <div class="submitContainer">
             <button type="text" class="submitWine">
-                <a href="#result"><i class="fas fa-wine-bottle"></i></a>
+                <a href="#result"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt=""></a>
             </button>
         </div>
-    </div>
+    </section>
 
     <div class="result" id="result">
-
+        
     </div>
     
     

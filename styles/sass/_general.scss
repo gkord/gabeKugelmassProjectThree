@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+}
+
+i {
+    font-size: 80px;
+    transition: transform 500ms ease;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bottleButton {
+  transition: transform 400ms ease-in-out;
+}
+
+.bottleButton:active {
+  transform: rotate(45deg);
+}
+
+.fa-chevron-down:active{
+  transform: translateY(10%);
+}
+
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:link{
+  color:black;
+}
+a:visited{
+  color: black;
+}
+a:hover{
+  color:black;
+}
+a:focus{
+  color: black;
+}
+a:active{
+  color:black;
+}
+
+input[type=radio]{
+  position: absolute;
+  left: -9999px;
+}
+
+.submitContainer {
+  margin-top: 50px;
+}

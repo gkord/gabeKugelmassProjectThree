@@ -2,7 +2,7 @@
     background: #c39393;
     max-width: 100%;
     text-align: center;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,6 @@
       button {
         background: #c39393;
         border: none;
-        margin-top: 20px;
         h2 {
           margin: 0;
           padding: 20px;
@@ -26,88 +25,26 @@
 
 .userDrink {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 100%;
 }
 //contains each of our wine glasses
 .box {
     width: 33%;
 }
-.wrap {
-  text-align: center;
+
+.questionTwoContainer img {
+  max-width: 100%;
 }
 
-.glass {
-  margin: 0 auto;
-  height: 100px;
-  width: 100px;
-  border-radius: 0px 0px 50% 50%;
-  padding-top: 50px;
-  box-sizing: border-box;
-  background-color: rgba(0,222,255, 0.3);
-}
-.glass:hover {
-  cursor: pointer;
-}
-.redGlass::after {
-  content: "";
-  width: 100px;
-  height: 50px;
-  border-radius: 0px 0px 100px 100px;
-  display:block;
-  z-index: -1;
-  background-color: rgba(0,222,255, 0);
-  transition: background 1s ease-in;
+.questionTwoContainer label img {
+  transition: transform 200ms ease-in;
 }
 
-.redGlass:hover::after {
-  background-color: #722f37;
+.questionTwoContainer label img:hover{
   cursor: pointer;
 }
 
-.whiteGlass::after {
-  content: "";
-  width: 100px;
-  height: 50px;
-  border-radius: 0px 0px 100px 100px;
-  display:block;
-  z-index: -1;
-  background-color: rgba(0,222,255, 0);
-  transition: background 1s ease-in;
-}
-
-.whiteGlass:hover::after {
-  background-color: #f1f285;
-  cursor: pointer;
-}
-
-.otherGlass::after {
-  content: "";
-  width: 100px;
-  height: 50px;
-  border-radius: 0px 0px 100px 100px;
-  display:block;
-  z-index: -1;
-  background-color: rgba(0,222,255, 0);
-  transition: content 1s ease-in;
-}
-
-.otherGlass:hover::after {
-  cursor: pointer;
-}
-.stem {
-  margin: 0 auto;
-  height: 75px;
-  width: 10px;
-  background-color: rgba(0,222,255, 0.3);
-  border-bottom: 2px solid rgb(0,155.4,178.5) ;
-  border-radius: 0px 0px 5px 5px;
-}
-.base {
-  margin: 0 auto;
-  margin-top: -6px;
-  width: 100px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgba(0,222,255, 0.3);
+.questionTwoContainer label img:active {
+  transform: scale(0.9);
 }

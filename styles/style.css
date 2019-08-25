@@ -179,8 +179,25 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .wrapper {
-  max-width: 1180px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -197,9 +214,21 @@ i {
   text-shadow: 2px 2px 4px #000000;
 }
 
-i:hover {
+.bottleButton {
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+.bottleButton:active {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.fa-chevron-down:active {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
 }
 
 a {
@@ -236,15 +265,25 @@ input[type=radio] {
   margin-top: 50px;
 }
 
-h2 {
+h3 {
   font-family: "Amatic SC", sans-serif;
   color: white;
-  font-size: 26px;
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.questionOneContainer h2,
+.questionTwoContainer h2 {
+  font-family: "Amatic SC", sans-serif;
+  color: white;
+  font-size: 3.6rem;
   text-shadow: 2px 2px 4px #000000;
 }
 
 .result h2 {
+  font-family: "Amatic SC", sans-serif;
   color: black;
+  font-size: 3.6rem;
 }
 
 header p {
@@ -255,11 +294,33 @@ header p {
 
 label {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+p.red {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #722f37;
+  text-transform: uppercase;
+}
+
+p.white {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #f1f285;
+  text-transform: uppercase;
+}
+
+p.other {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 header {
   background: #63032e;
-  min-height: 70vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,14 +354,27 @@ h1 {
   font-family: "Rye", sans-serif;
   color: white;
   text-transform: uppercase;
-  font-size: 64px;
+  font-size: 6.4rem;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title img {
+  width: 100%;
 }
 
 .questionOneContainer {
   background: #7a4044;
   text-align: center;
-  min-height: 70vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,19 +439,20 @@ h1 {
   cursor: pointer;
 }
 
-input[type=radio]:checked + label {
-  background: yellow;
+.questionOneContainer label:focus {
+  border: 1px dotted red;
 }
 
-.result {
-  text-align: center;
+.questionOneContainer input[type=radio]:checked + label {
+  background: black;
+  color: white;
 }
 
 .questionTwoContainer {
   background: #c39393;
   max-width: 100%;
   text-align: center;
-  min-height: 70vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +472,6 @@ input[type=radio]:checked + label {
 .questionTwoContainer button {
   background: #c39393;
   border: none;
-  margin-top: 20px;
 }
 
 .questionTwoContainer button h2 {
@@ -413,8 +487,9 @@ input[type=radio]:checked + label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 100%;
 }
 
@@ -422,91 +497,47 @@ input[type=radio]:checked + label {
   width: 33%;
 }
 
-.wrap {
+.questionTwoContainer img {
+  max-width: 100%;
+}
+
+.questionTwoContainer label img {
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+.questionTwoContainer label img:hover {
+  cursor: pointer;
+}
+
+.questionTwoContainer label img:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.result {
+  background: #CCB1B3;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
-.glass {
-  margin: 0 auto;
-  height: 100px;
-  width: 100px;
-  border-radius: 0px 0px 50% 50%;
-  padding-top: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: rgba(0, 222, 255, 0.3);
-}
-
-.glass:hover {
-  cursor: pointer;
-}
-
-.redGlass::after {
-  content: "";
-  width: 100px;
-  height: 50px;
-  border-radius: 0px 0px 100px 100px;
-  display: block;
-  z-index: -1;
-  background-color: rgba(0, 222, 255, 0);
-  -webkit-transition: background 1s ease-in;
-  transition: background 1s ease-in;
-}
-
-.redGlass:hover::after {
-  background-color: #722f37;
-  cursor: pointer;
-}
-
-.whiteGlass::after {
-  content: "";
-  width: 100px;
-  height: 50px;
-  border-radius: 0px 0px 100px 100px;
-  display: block;
-  z-index: -1;
-  background-color: rgba(0, 222, 255, 0);
-  -webkit-transition: background 1s ease-in;
-  transition: background 1s ease-in;
-}
-
-.whiteGlass:hover::after {
-  background-color: #f1f285;
-  cursor: pointer;
-}
-
-.otherGlass::after {
-  content: "";
-  width: 100px;
-  height: 50px;
-  border-radius: 0px 0px 100px 100px;
-  display: block;
-  z-index: -1;
-  background-color: rgba(0, 222, 255, 0);
-  -webkit-transition: content 1s ease-in;
-  transition: content 1s ease-in;
-}
-
-.otherGlass:hover::after {
-  cursor: pointer;
-}
-
-.stem {
-  margin: 0 auto;
-  height: 75px;
-  width: 10px;
-  background-color: rgba(0, 222, 255, 0.3);
-  border-bottom: 2px solid #009bb3;
-  border-radius: 0px 0px 5px 5px;
-}
-
-.base {
-  margin: 0 auto;
-  margin-top: -6px;
-  width: 100px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgba(0, 222, 255, 0.3);
+.result p {
+  font-size: 2rem;
 }
 
 @media (max-width: 1065px) {
@@ -517,6 +548,12 @@ input[type=radio]:checked + label {
 }
 
 @media (max-width: 565px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+  .title img {
+    display: none;
+  }
   .userMood {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
