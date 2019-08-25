@@ -20,26 +20,25 @@
     <header>
         <div class="wrapper">
             <div class="title">
-                <img class="titleGlassLeft" src="./assets/icons8-wine-glass-480.png" alt="">
+                <img class="titleGlassLeft" src="./assets/icons8-wine-glass-480.png" alt="glass of red wine">
                 <h1>Mood Sommelier</h1>
-                <img class="titleGlassRight" src="./assets/icons8-wine-glass-480.png" alt="">
+                <img class="titleGlassRight" src="./assets/icons8-wine-glass-480.png" alt="glass of red wine">
             </div>
             <h3>Click the bottle to get started</h3>
     
             <div>
                 <button>
-                    <a href="#sectionOne"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt=""></i></a>
+                    <a href="#sectionOne"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt="green bottle"></i></a>
                 </button>
             </div>
         </div>
     </header>
-
-    <section class="questionOneContainer">
-        <h2 id="sectionOne">Describe your current mood</h2>
+    <section class="questionOneContainer" id="sectionOne">
+        <h2>Describe your current mood</h2>
         <form class="moodForm wrapper" action="">
             <fieldset class="userMood">
                     <div class="inputContainer">
-                        <input id="reflective" type="radio" name="mood" value="reflective">
+                        <input id="reflective" type="radio" name="mood" value="reflective" checked="true">
                         <label for="reflective">Reflective</label>
                     </div>
                     <div class="inputContainer">
@@ -74,7 +73,7 @@
         </form>
 
         <div class="submitContainer">
-            <button type="text" class="submitMood">
+            <button type="submit" class="submitMood">
                 <a href="#sectionTwo"><i class="fas fa-chevron-down"></i></a>
             </button>
         </div>
@@ -85,21 +84,21 @@
         <form class="wineForm wrapper" action="">
             <fieldset class="userDrink">
                 <div class="box">
-                    <input id="red" type="radio" name="drink" value="red">
+                    <input id="red" type="radio" name="drink" value="red" checked="true">
                     <label for="red">
-                        <img src="./assets/icons8-wine-glass-240(2).png" alt="">
+                        <img src="./assets/icons8-wine-glass-240(2).png" alt="glass of red wine">
                     </label>
                 </div>
                 <div class="box">
                     <input id="white" type="radio" name="drink" value="white">
                 	<label for="white">
-                        <img src="./assets/icons8-wine-glass-240(3).png" alt="">
+                        <img src="./assets/icons8-wine-glass-240(3).png" alt="glass of white wine">
                 	</label>
                 </div> 
                 <div class="box">
                     <input id="other" type="radio" name="drink" value="other">
                     <label for="other">
-                        <img src="./assets/icons8-wine-glass-240(4).png" alt="">
+                        <img src="./assets/icons8-wine-glass-240(4).png" alt="glass of wine with white liquid">
                     </label>
                 </div>
             </fieldset>
@@ -108,8 +107,8 @@
         <h3>Click the bottle for your result</h3>
 
         <div class="submitContainer">
-            <button type="text" class="submitWine">
-                <a href="#result"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt=""></a>
+            <button type="submit" class="submitWine">
+                <a href="#result"><img class="bottleButton" src="./assets/icons8-wine-bottle-100.png" alt="green bottle"></a>
             </button>
         </div>
     </section>

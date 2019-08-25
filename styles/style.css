@@ -261,6 +261,10 @@ input[type=radio] {
   left: -9999px;
 }
 
+input[type=radio]:focus + label {
+  outline: dotted;
+}
+
 .submitContainer {
   margin-top: 50px;
 }
@@ -270,6 +274,13 @@ h3 {
   color: white;
   font-size: 2.6rem;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.newMood h3, .reset h3 {
+  color: black;
+  text-shadow: none;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 .questionOneContainer h2,
@@ -295,27 +306,6 @@ header p {
 label {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
-}
-
-p.red {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  color: #722f37;
-  text-transform: uppercase;
-}
-
-p.white {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  color: #f1f285;
-  text-transform: uppercase;
-}
-
-p.other {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 header {
@@ -419,7 +409,7 @@ h1 {
   height: 120px;
   width: 120px;
   padding: 20px;
-  margin: 0px 5px;
+  margin: 5px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,6 +507,14 @@ h1 {
           transform: scale(0.9);
 }
 
+.questionTwoContainer input[type=radio]:checked + label img {
+  border-bottom: 3px solid black;
+}
+
+.questionTwoContainer input[type=radio]:focus + label {
+  outline: dotted;
+}
+
 .result {
   background: #CCB1B3;
   min-height: 100vh;
@@ -547,9 +545,8 @@ h1 {
   border-bottom: 2px solid black;
 }
 
-.result h2 {
-  margin: 0;
-  padding-bottom: 5px;
+.newMood:focus, .reset:focus {
+  outline: dotted;
 }
 
 .buttonContainer {
@@ -561,6 +558,10 @@ h1 {
       justify-content: space-around;
 }
 
+.result img {
+  max-width: 320px;
+}
+
 @media (max-width: 1065px) {
   .userMood {
     -ms-grid-columns: (1fr)[4];
@@ -569,14 +570,44 @@ h1 {
 }
 
 @media (max-width: 565px) {
+  header {
+    padding: 5px 0px;
+  }
   h1 {
     font-size: 4.8rem;
   }
   .title img {
     display: none;
   }
+  .questionOneContainer {
+    padding: 10px 0px;
+  }
   .userMood {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .userMood label {
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    padding: 5px 20px;
+  }
+  .inputContainer {
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .result p {
+    font-size: 1.6rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 378px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.4rem;
   }
 }

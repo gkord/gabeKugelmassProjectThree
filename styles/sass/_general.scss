@@ -54,6 +54,11 @@ input[type=radio]{
   left: -9999px;
 }
 
+input[type=radio]:focus + label {
+  outline: dotted;
+}
+
+
 .submitContainer {
   margin-top: 50px;
 }

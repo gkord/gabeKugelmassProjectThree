@@ -48,3 +48,10 @@
 .questionTwoContainer label img:active {
   transform: scale(0.9);
 }
+
+.questionTwoContainer input[type=radio]:checked + label img {
+    border-bottom: 3px solid black;
+}
+.questionTwoContainer input[type=radio]:focus + label {
+  outline: dotted;
+}

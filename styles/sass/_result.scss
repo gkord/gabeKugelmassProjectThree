@@ -18,13 +18,16 @@
     border-bottom: 2px solid black ;
 }
 
-.result h2 {
-    margin: 0;
-    padding-bottom: 5px;
+.newMood:focus, .reset:focus {
+    outline: dotted;
 }
 
 .buttonContainer {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.result img{
+    max-width: 320px;
 }

@@ -9,6 +9,13 @@ h3 {
     text-shadow: 2px 2px 4px #000000;
 }
 
+.newMood h3, .reset h3 {
+    color: black;
+    text-shadow: none;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
 .questionOneContainer h2,
 .questionTwoContainer h2 {
     font-family: $mainFont;
@@ -32,25 +39,4 @@ header p {
 label {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
-}
-
-p.red {
-    font-family: $secondaryFont;
-    font-size: 2rem;
-    color: #722f37;
-    text-transform: uppercase;
-}
-
-p.white {
-    font-family: $secondaryFont;
-    font-size: 2rem;
-    color: #f1f285;
-    text-transform: uppercase;
-}
-
-p.other {
-    font-family: $secondaryFont;
-    font-size: 2rem;
-    color: #000000;
-    text-transform: uppercase;
 }
