@@ -4,9 +4,9 @@ wineApp.wineChoice = {
   red: {
     reflective: [
       {
-        varietal: "Cabernet Sauvignon",
+        varietal: "Bordeaux Blend",
         description:
-          "A robust red that is generally full-bodied, dry, and abundant in tannin. This wine pairs well with your reflective mood due to its complexity. There are many layers too unravel. Look for something from the Left Bank of Bordeaux, Napa Valley, California or Tuscany, Italy.",
+          "Just like you, there are many layers too unravel in the red wines of Bordeaux. Look for something from the Left Bank and get lost in its complexity.",
         img: "./assets/bordeaux.png",
         alt: "bottle of red wine from Bordeaux"
       },
@@ -43,7 +43,7 @@ wineApp.wineChoice = {
       {
         varietal: "Zinfandel",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "An upbeat wine to match your upbeat mood. Enjoy the fruit froward explosion of flavour that a Zinfandel has to offer when your energy just can't be tamed.",
         img: "./assets/murphyGoodeZinfandel.png",
         alt: "bottle of red wine from California"
       }
@@ -52,14 +52,14 @@ wineApp.wineChoice = {
       {
         varietal: "Merlot",
         description:
-          "Merlot is loved for it’s boisterous black cherry flavors, supple tannins, and chocolatey finish.",
+          "Merlot is loved for it’s boisterous black cherry flavors, supple tannins, and chocolatey finish. Hits the spot every time.",
         img: "./assets/quailsGateMerlot.png",
         alt: "bottle of red wine from Canada"
       },
       {
         varietal: "Tempranillo",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "The most popular grape of Spain for a reason. Drink this one on your own or share a bottle with a small group of friends over a night in.",
         img: "./assets/arinzanoTempranillo.png",
         alt: "bottle of red wine from Spain"
       },
@@ -276,7 +276,7 @@ wineApp.wineChoice = {
       {
         varietal: "Vermentino",
         description:
-          "Vermentino is an important white of Sardinia and Tuscany where producers offer both oaked and unoaked styles.With a fuller style and herbaceous flavors",
+          "Vermentino is an important white of Sardinia and Tuscany where producers offer both oaked and unoaked styles. With a fuller style and herbaceous flavors, try this when you're up for a departure from the norm.",
         img: "./assets/vermentino.png",
         alt: "bottle of white wine from Italy"
       }
@@ -380,7 +380,7 @@ wineApp.wineChoice = {
       {
         varietal: "Franciacorta",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Pop open a bottle of Franciacorta, Italy's version of champagne while you ponder what got you to here.",
         img: "./assets/franciacorta.png",
         alt: "bottle of sparkling wine from Italy"
       }
@@ -397,7 +397,7 @@ wineApp.wineChoice = {
       {
         varietal: "Port",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Throw on some jazz and chill out with a glass of vintage port to warm your soul.",
         img: "./assets/grahamsPort.png",
         alt: "bottle of wine from Portugal"
       }
@@ -406,7 +406,7 @@ wineApp.wineChoice = {
       {
         varietal: "New World Sparkling",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Did you know that Canada makes some kickass sparkling wines? If you're looking for an adventure grab a bottle of this lesser known gem from Nova Scotia of all places!",
         img: "./assets/benBridgeSparkling.png",
         alt: "bottle of sparkling wine from Canada"
       }
@@ -415,7 +415,7 @@ wineApp.wineChoice = {
       {
         varietal: "Champagne",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Who says Champagne is reserved for celebrations? Lift your spirits and treat yourself to something special. You deserve it.",
         img: "./assets/baronChampagne.png",
         alt: "bottle of champagne"
       }
@@ -424,7 +424,7 @@ wineApp.wineChoice = {
       {
         varietal: "Champagne",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "There are other options but lets be honest, there is nothing finer than opening a special bottle of Champagne to celebrate the happy times!",
         img: "./assets/polRogerChampagne.png",
         alt: "bottle of champagne"
       }
@@ -433,7 +433,7 @@ wineApp.wineChoice = {
       {
         varietal: "Prosecco",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Not sure what to choose? Don't care? Pop open a bottle of Prosecco and leave the decision-making behind. Always a crowd pleaser that hits the spot.",
         img: "./assets/bisolProsecco.png",
         alt: "bottle of prosecco"
       }
@@ -442,7 +442,7 @@ wineApp.wineChoice = {
       {
         varietal: "Rosé",
         description:
-          "Because rosé will turn that anger into joy!",
+          "Because only rosé will turn that anger into joy!",
         img: "./assets/whisperingAngel.png",
         alt: "bottle of rosé wine"
       }
