@@ -30,7 +30,7 @@ wineApp.wineChoice = {
         varietal: "New World Pinot Noir",
         description:
           "Pinot Noir from the New World is often light to medium bodied and chalk full of ripe red fruit and racy acidity. Try something lively and vibrant from New Zealand, California or Ontario when you're feeling energetic.",
-        img: "./assets/cambria-pinot-noir.png",
+        img: "./assets/cambriaPinotNoir.png",
         alt: "bottle of red wine from California"
       },
       {
@@ -44,7 +44,7 @@ wineApp.wineChoice = {
         varietal: "Zinfandel",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/murphy-goode-zinfandel.png",
+        img: "./assets/murphyGoodeZinfandel.png",
         alt: "bottle of red wine from California"
       }
     ],
@@ -53,21 +53,21 @@ wineApp.wineChoice = {
         varietal: "Merlot",
         description:
           "Merlot is loved for it’s boisterous black cherry flavors, supple tannins, and chocolatey finish.",
-        img: "./assets/quails-gate-merlot.png",
+        img: "./assets/quailsGateMerlot.png",
         alt: "bottle of red wine from Canada"
       },
       {
         varietal: "Tempranillo",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/arinzano-tempranillo.png",
+        img: "./assets/arinzanoTempranillo.png",
         alt: "bottle of red wine from Spain"
       },
       {
         varietal: "Sangiovese",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/la-bracessca-sangiovese.png",
+        img: "./assets/laBracesscaSangiovese.png",
         alt: "bottle of red wine from Italy"
       }
     ],
@@ -76,14 +76,14 @@ wineApp.wineChoice = {
         varietal: "Zinfandel",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/murphy-goode-zinfandel.png",
+        img: "./assets/murphyGoodeZinfandel.png",
         alt: "bottle of red wine from California"
       },
       {
         varietal: "Alsacian Pinot Noir",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/hugel-alsace-pinot-noir.png",
+        img: "./assets/hugelAlsacePinotNoir.png",
         alt: "bottle of red wine from France"
       },
       {
@@ -99,7 +99,7 @@ wineApp.wineChoice = {
         varietal: "Nebbiolo",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/langhe-nebbiolo-montegrilli.png",
+        img: "./assets/langheNebbiolo.png",
         alt: "bottle of red wine from Italy"
       },
       {
@@ -113,7 +113,7 @@ wineApp.wineChoice = {
         varietal: "Gamay",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/chateau-des-jacques-morgon.png",
+        img: "./assets/chateauDesJacquesMorgon.png",
         alt: "bottle of red wine from Burgundy"
       }
     ],
@@ -122,14 +122,14 @@ wineApp.wineChoice = {
         varietal: "Cabernet Sauvignon",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/silver-oak-cab.png",
+        img: "./assets/silverOakCab.png",
         alt: "bottle of red wine from Califrnia"
       },
       {
         varietal: "Rioja",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/faustino-gran-riserva.png",
+        img: "./assets/faustinoGranRiserva.png",
         alt: "bottle of red wine from Spain"
       },
       {
@@ -145,21 +145,21 @@ wineApp.wineChoice = {
         varietal: "Merlot",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/McManis_Merlot.png",
+        img: "./assets/mcmannisMerlot.png.png",
         alt: "bottle of red wine from California"
       },
       {
         varietal: "Sangiovese",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/rosso-sangiovese.png",
+        img: "./assets/rossoSangiovese.png",
         alt: "bottle of red wine from Italy"
       },
       {
         varietal: "Cabernet Franc",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/fielding-cab-franc.png",
+        img: "./assets/fieldingCabFranc.png",
         alt: "bottle of red wine from Canada"
       }
     ],
@@ -168,7 +168,7 @@ wineApp.wineChoice = {
         varietal: "Shiraz",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/Heirloom-McLaren-Vale-Shiraz.png",
+        img: "./assets/heirloomShiraz.png",
         alt: "bottle of red wine from Australia"
       },
       {
@@ -182,7 +182,7 @@ wineApp.wineChoice = {
         varietal: "Nero D'Avola",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/morgante-nero-d-avola.png",
+        img: "./assets/morganteNero.png",
         alt: "bottle of red wine from Italy"
       }
     ]
@@ -194,21 +194,21 @@ wineApp.wineChoice = {
         varietal: "Burgundy Chardonnay",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/girardin-puligny.png",
+        img: "./assets/girardinPuligny.png",
         alt: "bottle of white wine from Burgundy"
       },
       {
         varietal: "German Riesling",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/egon-muller-riesling.png",
+        img: "./assets/egonMullerRiesling.png",
         alt: "bottle of white wine from Germany"
       },
       {
         varietal: "Australian Semillon",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/tyrells-semillon.png",
+        img: "./assets/tyrellsSemillon.png",
         alt: "bottle of white wine from Australia"
       }
     ],
@@ -217,21 +217,21 @@ wineApp.wineChoice = {
         varietal: "New Zealand Sauvignon Blanc",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/nz-sauv-blanc.png",
+        img: "./assets/nzSauvBlanc.png",
         alt: "bottle of white wine from New Zealand"
       },
       {
         varietal: "Pinot Blanc",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/Reserve_PinotBlanc.png",
+        img: "./assets/reservePinotBlanc.png",
         alt: "bottle of white wine from Canada"
       },
       {
         varietal: "Southern Rhone Blend",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/chapoutier-white-rhone.png",
+        img: "./assets/chapoutierWhiteRhone.png",
         alt: "bottle of white wine from France"
       }
     ],
@@ -247,7 +247,7 @@ wineApp.wineChoice = {
         varietal: "Pinot Grigio",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/alois-lageder-pinot-grigio.png",
+        img: "./assets/aloisLagederPinotGrigio.png",
         alt: "bottle of white wine from Italy"
       },
       {
@@ -263,21 +263,21 @@ wineApp.wineChoice = {
         varietal: "Greco di Tufo",
         description:
           "Campania wine region in southern Italy. refreshing, crisp white wines are known for their aromatic notes of lemons, pears and toasted almonds and a lingering mineral finish.",
-        img: "./assets/greco-di-tufo.png",
+        img: "./assets/grecoDiTufo.png",
         alt: "bottle of rwhite wine from Italy"
       },
       {
         varietal: "Assyrtico",
         description:
           "Native to Santorini, Assyrtiko is a rare grape in terms of vineyard area, but is quickly picking up acreage throughout Greece. Noted for its texture, acidity, and minerality.",
-        img: "./assets/assyrtiko-santo-wines.png",
+        img: "./assets/assyrtiko.png",
         alt: "bottle of white wine from Greece"
       },
       {
         varietal: "Vermentino",
         description:
           "Vermentino is an important white of Sardinia and Tuscany where producers offer both oaked and unoaked styles.With a fuller style and herbaceous flavors",
-        img: "./assets/Vermentino-Nuovo.png",
+        img: "./assets/vermentino.png",
         alt: "bottle of white wine from Italy"
       }
     ],
@@ -286,14 +286,14 @@ wineApp.wineChoice = {
         varietal: "Chardonnay",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/bramito-chardonnay.png",
+        img: "./assets/bramitoChardonnay.png",
         alt: "bottle of white wine from Italy"
       },
       {
         varietal: "Pinot Gris",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/j-pinot-gris.png",
+        img: "./assets/jPinotGris.png",
         alt: "bottle of white wine from California"
       },
       {
@@ -309,21 +309,21 @@ wineApp.wineChoice = {
         varietal: "Chardonnay",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/kosta-chardonnay.png",
+        img: "./assets/kostaChardonnay.png",
         alt: "bottle of white wine from California"
       },
       {
         varietal: "Viognier",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/cristom-viognier.png",
+        img: "./assets/cristomViognier.png",
         alt: "bottle of white wine from Oregon"
       },
       {
         varietal: "Moscato",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/ceretto_moscato.png",
+        img: "./assets/cerettoMoscato.png",
         alt: "bottle of white wine from Italy"
       }
     ],
@@ -332,21 +332,21 @@ wineApp.wineChoice = {
         varietal: "Pinot Grigio",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/santa-marg-pinot-grigio.png",
+        img: "./assets/santaMargPinotGrigio.png",
         alt: "bottle of white wine from Italy"
       },
       {
         varietal: "Sauvignon Blanc",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/trius-sauv-blanc.png",
+        img: "./assets/triusSauvBlanc.png",
         alt: "bottle of white wine from Canada"
       },
       {
         varietal: "Dry Riesling",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/vineland-dry-riesling.png",
+        img: "./assets/vinelandDryRiesling.png",
         alt: "bottle of white wine from Canada"
       }
     ],
@@ -362,14 +362,14 @@ wineApp.wineChoice = {
         varietal: "Chenin Blanc",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/Simonsig-Chenin-Blanc-2.png",
+        img: "./assets/cheninBlanc.png",
         alt: "bottle of white wine from South Africa"
       },
       {
         varietal: "Grillo",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/zagra-grillo.png",
+        img: "./assets/grillo.png",
         alt: "bottle of white wine from Italy"
       }
     ]
@@ -389,7 +389,7 @@ wineApp.wineChoice = {
       {
         varietal: "Rosé",
         description: "Self-explanatory. ROSÉ ALL DAY!",
-        img: "./assets/Whispering-Angel.png",
+        img: "./assets/whisperingAngel.png",
         alt: "bottle of rosé wine"
       }
     ],
@@ -398,7 +398,7 @@ wineApp.wineChoice = {
         varietal: "Port",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/graham-s-2016-vintage-port.png",
+        img: "./assets/grahamsPort.png",
         alt: "bottle of wine from Portugal"
       }
     ],
@@ -407,7 +407,7 @@ wineApp.wineChoice = {
         varietal: "New World Sparkling",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/ben-bridge-sparkling.png",
+        img: "./assets/benBridgeSparkling.png",
         alt: "bottle of sparkling wine from Canada"
       }
     ],
@@ -416,7 +416,7 @@ wineApp.wineChoice = {
         varietal: "Champagne",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/baron-de-rothschild-brut.png",
+        img: "./assets/baronChampagne.png",
         alt: "bottle of champagne"
       }
     ],
@@ -425,7 +425,7 @@ wineApp.wineChoice = {
         varietal: "Champagne",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/pol-roger-champagne.png",
+        img: "./assets/polRogerChampagne.png",
         alt: "bottle of champagne"
       }
     ],
@@ -434,7 +434,7 @@ wineApp.wineChoice = {
         varietal: "Prosecco",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/bisol-prosecco.png",
+        img: "./assets/bisolProsecco.png",
         alt: "bottle of prosecco"
       }
     ],
@@ -443,7 +443,7 @@ wineApp.wineChoice = {
         varietal: "Rosé",
         description:
           "Because rosé will turn that anger into joy!",
-        img: "./assets/Whispering-Angel.png",
+        img: "./assets/whisperingAngel.png",
         alt: "bottle of rosé wine"
       }
     ]
