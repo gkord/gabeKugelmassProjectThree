@@ -52,6 +52,3 @@
 .questionTwoContainer input[type=radio]:checked + label img {
     border-bottom: 3px solid black;
 }
-.questionTwoContainer input[type=radio]:focus + label {
-  outline: dotted;
-}

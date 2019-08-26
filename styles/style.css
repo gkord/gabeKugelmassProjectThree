@@ -524,10 +524,6 @@ h1 {
   border-bottom: 3px solid black;
 }
 
-.questionTwoContainer input[type=radio]:focus + label {
-  outline: dotted;
-}
-
 .result {
   background: #CCB1B3;
   min-height: 100vh;

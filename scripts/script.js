@@ -13,7 +13,7 @@ wineApp.wineChoice = {
       {
         varietal: "Burgundy Pinot Noir",
         description:
-          "The crown jewel of red wines. Burgundy Pinot Noir comes in many styles from light and delicate to full-bodied and rich. Try something from the Cote-de-Nuits appellation and take some time to be present in the moment and savour the  notes of black currant, cherry, fresh red fruits, and earthy mushroom and spice.",
+          "The crown jewel of red wines. Burgundy Pinot Noir comes in many styles from light and delicate to full-bodied and rich. Try something from the Cote-de-Nuits appellation and take some time to be present in the moment and savour the notes of black currant, cherry, fresh red fruits, and earthy mushroom and spice.",
         img: "./assets/jadot.png",
         alt: "bottle of red wine from Burgundy"
       },
@@ -29,14 +29,14 @@ wineApp.wineChoice = {
       {
         varietal: "New World Pinot Noir",
         description:
-          "Pinot Noir from the New World is often light to medium bodied and chalk full of ripe red fruit and racy acidity. Pair something from lively and vibrant from New Zealand, California or Ontario when you're feeling energetic and it will pay off in spades!",
+          "Pinot Noir from the New World is often light to medium bodied and chalk full of ripe red fruit and racy acidity. Try something lively and vibrant from New Zealand, California or Ontario when you're feeling energetic.",
         img: "./assets/cambria-pinot-noir.png",
         alt: "bottle of red wine from California"
       },
       {
         varietal: "Frappato",
         description:
-          "Often overlooked, this regional grape of Sicily bursts with aromas of sweet red berries and incense spice. Best served slightly chilled and",
+          "Often overlooked, this regional grape of Sicily bursts with aromas of sweet red berries and incense spice. Best served slightly chilled.",
         img: "./assets/frappato.png",
         alt: "bottle of red wine from Italy"
       },
@@ -297,11 +297,11 @@ wineApp.wineChoice = {
         alt: "bottle of white wine from California"
       },
       {
-        varietal: "Chateauneuf du Pape",
+        varietal: "Gewurtztraminer",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
-        alt: "bottle of red wine from burgundy"
+        img: "./assets/gewurtz.png",
+        alt: "bottle of white wine from France"
       }
     ],
     celebratory: [
@@ -309,21 +309,21 @@ wineApp.wineChoice = {
         varietal: "Chardonnay",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
+        img: "./assets/kosta-chardonnay.png",
         alt: "bottle of white wine from California"
       },
       {
         varietal: "Viognier",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
-        alt: "bottle of white wine from France"
+        img: "./assets/cristom-viognier.png",
+        alt: "bottle of white wine from Oregon"
       },
       {
         varietal: "Moscato",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
+        img: "./assets/ceretto_moscato.png",
         alt: "bottle of white wine from Italy"
       }
     ],
@@ -389,7 +389,7 @@ wineApp.wineChoice = {
       {
         varietal: "Rosé",
         description: "Self-explanatory. ROSÉ ALL DAY!",
-        img: "",
+        img: "./assets/Whispering-Angel.png",
         alt: "bottle of rosé wine"
       }
     ],
@@ -398,7 +398,7 @@ wineApp.wineChoice = {
         varietal: "Port",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
+        img: "./assets/graham-s-2016-vintage-port.png",
         alt: "bottle of wine from Portugal"
       }
     ],
@@ -416,7 +416,7 @@ wineApp.wineChoice = {
         varietal: "Champagne",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
+        img: "./assets/baron-de-rothschild-brut.png",
         alt: "bottle of champagne"
       }
     ],
@@ -425,7 +425,7 @@ wineApp.wineChoice = {
         varietal: "Champagne",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
+        img: "./assets/pol-roger-champagne.png",
         alt: "bottle of champagne"
       }
     ],
@@ -440,11 +440,11 @@ wineApp.wineChoice = {
     ],
     angry: [
       {
-        varietal: "Champagne",
+        varietal: "Rosé",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "",
-        alt: "bottle of champagne"
+          "Because rosé will turn that anger into joy!",
+        img: "./assets/Whispering-Angel.png",
+        alt: "bottle of rosé wine"
       }
     ]
   }
@@ -483,7 +483,7 @@ wineApp.smoothScroll= function(){
         const wineArray = wineObject[wineApp.userMood];
         const wineSelection = getRandomNumberFromArray(wineArray);
         //display results on the screen
-        $('.result').html(`<h2 class="choice" id="result">${wineSelection.varietal}</h2>`);
+        $('.result').html(`<h2 class="choice">${wineSelection.varietal}</h2>`);
         $('.result').append(`<p>${wineSelection.description}</p>`);
         $('.result').append(`<figure><img src="${wineSelection.img}" alt="${wineSelection.alt}"></figure>`);
         $('.result').append(`<div class="buttonContainer"><button class="newMood"><h3>Choose a different mood</h3></button></div>`);
