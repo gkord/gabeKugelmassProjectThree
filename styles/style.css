@@ -298,8 +298,9 @@ h3 {
 }
 
 header p {
-  font-family: "Amatic SC", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
+  font-size: 2rem;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -331,11 +332,6 @@ header {
 header button {
   background: #63032e;
   border: none;
-}
-
-header button p {
-  font-family: "Amatic SC", sans-serif;
-  color: white;
 }
 
 h1 {
