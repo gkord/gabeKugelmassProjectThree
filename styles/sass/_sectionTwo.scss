@@ -1,36 +1,36 @@
 .questionTwoContainer {
+  background: #c39393;
+  max-width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  button {
     background: #c39393;
-    max-width: 100%;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px;
-      button {
-        background: #c39393;
-        border: none;
-        h2 {
-          margin: 0;
-          padding: 20px;
-        }
+    border: none;
+    h2 {
+      margin: 0;
+      padding: 20px;
     }
+  }
 }
- 
+
 //this form contains our buttons
 .wineForm {
   width: 100%;
 }
 
 .userDrink {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
 }
 //contains each of our wine glasses
 .box {
-    width: 33%;
+  width: 33%;
 }
 
 .questionTwoContainer img {
@@ -41,7 +41,7 @@
   transition: transform 200ms ease-in;
 }
 
-.questionTwoContainer label img:hover{
+.questionTwoContainer label img:hover {
   cursor: pointer;
 }
 
@@ -49,6 +49,6 @@
   transform: scale(0.9);
 }
 
-.questionTwoContainer input[type=radio]:checked + label img {
-    border-bottom: 3px solid black;
+.questionTwoContainer input[type="radio"]:checked + label img {
+  border-bottom: 3px solid black;
 }

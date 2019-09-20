@@ -2,18 +2,18 @@ html {
   font-size: 62.5%;
 }
 .wrapper {
-    max-width: 1080px;
-    margin: 0 auto;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 fieldset {
-    border: none;
+  border: none;
 }
 
 i {
-    font-size: 80px;
-    transition: transform 500ms ease;
-    text-shadow: 2px 2px 4px #000000;
+  font-size: 80px;
+  transition: transform 500ms ease;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .bottleButton {
@@ -24,40 +24,38 @@ i {
   transform: rotate(45deg);
 }
 
-.fa-chevron-down:active{
+.fa-chevron-down:active {
   transform: translateY(10%);
 }
 
-
 a {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
-a:link{
-  color:black;
-}
-a:visited{
+a:link {
   color: black;
 }
-a:hover{
-  color:black;
-}
-a:focus{
+a:visited {
   color: black;
 }
-a:active{
-  color:black;
+a:hover {
+  color: black;
+}
+a:focus {
+  outline: dotted;
+}
+a:active {
+  color: black;
 }
 
-input[type=radio]{
+input[type="radio"] {
   position: absolute;
   left: -9999px;
 }
 
-input[type=radio]:focus + label {
+input[type="radio"]:focus + label {
   outline: dotted;
 }
-
 
 .submitContainer {
   margin-top: 50px;
@@ -67,10 +65,18 @@ footer {
   background: #7a4044;
   text-align: center;
   p {
-  color: white;
-  font-family: 'Amatic SC', sans-serif;
-  margin: 0;
-  padding: 5px 0px;
-  font-size: 2rem;
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    margin: 0;
+    padding: 5px 0px;
+    font-size: 2rem;
   }
+}
+
+.hide {
+  display: none;
+}
+
+.show{
+  display: block;
 }

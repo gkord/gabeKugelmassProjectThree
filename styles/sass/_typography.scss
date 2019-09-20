@@ -1,43 +1,44 @@
-$headerFont: 'Rye', sans-serif;
-$mainFont: 'Amatic SC', sans-serif;
-$secondaryFont: 'Open Sans', sans-serif;
+$headerFont: "Rye", sans-serif;
+$mainFont: "Amatic SC", sans-serif;
+$secondaryFont: "Open Sans", sans-serif;
 
 h3 {
-    font-family: $mainFont;
-    color: white;
-    font-size: 2.6rem;
-    text-shadow: 2px 2px 4px #000000;
+  font-family: $mainFont;
+  color: white;
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.newMood h3, .reset h3 {
-    color: black;
-    text-shadow: none;
-    margin: 0;
-    padding-bottom: 5px;
+.newMood h3,
+.reset h3 {
+  color: black;
+  text-shadow: none;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 .questionOneContainer h2,
 .questionTwoContainer h2 {
-    font-family: $mainFont;
-    color: white;
-    font-size: 3.6rem;
-    text-shadow: 2px 2px 4px #000000;
+  font-family: $mainFont;
+  color: white;
+  font-size: 3.6rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.result h2{
-    font-family: $mainFont;
-    color: black;
-    font-size: 3.6rem;
+.result h2 {
+  font-family: $mainFont;
+  color: black;
+  font-size: 3.6rem;
 }
 
 header p {
-    font-family: $secondaryFont;
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px #000000;
+  font-family: $secondaryFont;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 label {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
 }

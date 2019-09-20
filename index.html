@@ -1,129 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/faviconIO/appleTouchIcon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/faviconIO/favicon32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/faviconIO/favicon16x16.png">
-    <link rel="manifest" href="./assets/faviconIO/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans|Rye&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/faviconIO/appleTouchIcon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/faviconIO/favicon32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/faviconIO/favicon16x16.png"
+    />
+    <link rel="manifest" href="./assets/faviconIO/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans|Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Mood Sommelier</title>
-</head>
-<body>
-    <header>
-        <div class="wrapper">
-            <div class="title">
-                <img class="titleGlassLeft" src="./assets/redWineGlass480.png" alt="glass of red wine">
-                <h1>Mood Sommelier</h1>
-                <img class="titleGlassRight" src="./assets/redWineGlass480.png" alt="glass of red wine">
-            </div>
-            
-            <h3>Click the bottle to get started</h3>
-    
-            <div>
-                <button>
-                    <a href="#sectionOne"><img class="bottleButton" src="./assets/wineBottle100.png" alt="green bottle"></i></a>
-                </button>
-            </div>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrapper">
+        <div class="title">
+          <div class="titleLeft">
+            <img
+              class="titleGlassLeft"
+              src="./assets/redWineGlass480.png"
+              alt="glass of red wine"
+            />
+          </div>
+          <div class="titleCenter">
+            <h1>Mood Sommelier</h1>
+          </div>
+          <div class="titleRight">
+            <img
+              class="titleGlassRight"
+              src="./assets/redWineGlass480.png"
+              alt="glass of red wine"
+            />
+          </div>
         </div>
+
+        <h3>Click the bottle to get started</h3>
+
+        <div>
+          <button>
+            <a href="#sectionOne"
+              ><img
+                class="bottleButton"
+                src="./assets/wineBottle100.png"
+                alt="green bottle"
+            /></a>
+          </button>
+        </div>
+      </div>
     </header>
-    <section class="questionOneContainer" id="sectionOne">
+
+    <!-- MOOD SELECT SECTION -->
+    <section class="sectionOne hide" id="sectionOne">
+      <div class="questionOneContainer wrapper" >
         <h2>Describe your current mood</h2>
-        <form class="moodForm wrapper" action="">
-            <fieldset class="userMood">
-                    <div class="inputContainer">
-                        <input id="reflective" type="radio" name="mood" value="reflective" checked="true">
-                        <label for="reflective">Reflective</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input id="gloomy" type="radio" name="mood" value="gloomy">
-                        <label for="gloomy">Gloomy</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input id="indifferent" type="radio" name="mood" value="indifferent">
-                        <label for="indifferent">Indifferent</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input id="energetic" type="radio" name="mood" value="energetic">
-                        <label for="energetic">Energetic</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input id="celebratory" type="radio" name="mood" value="celebratory">
-                        <label for="celebratory">Celebratory</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input id="adventurous" type="radio" name="mood" value="adventurous">
-                        <label for="adventurous">Adventurous</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input id="mellow" type="radio" name="mood" value="mellow">
-                        <label for="mellow">Mellow</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input id="angry" type="radio" name="mood" value="angry">
-                        <label for="angry">Angry</label>
-                    </div>
-            </fieldset>
+        <form class="moodForm " action="">
+          <fieldset>
+            <div class="userMood">
+              <div class="inputContainer">
+                <input
+                  id="reflective"
+                  type="radio"
+                  name="mood"
+                  value="reflective"
+                  checked="true"
+                />
+                <label for="reflective">Reflective</label>
+              </div>
+              <div class="inputContainer">
+                <input id="gloomy" type="radio" name="mood" value="gloomy" />
+                <label for="gloomy">Gloomy</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  id="indifferent"
+                  type="radio"
+                  name="mood"
+                  value="indifferent"
+                />
+                <label for="indifferent">Indifferent</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  id="energetic"
+                  type="radio"
+                  name="mood"
+                  value="energetic"
+                />
+                <label for="energetic">Energetic</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  id="celebratory"
+                  type="radio"
+                  name="mood"
+                  value="celebratory"
+                />
+                <label for="celebratory">Celebratory</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  id="adventurous"
+                  type="radio"
+                  name="mood"
+                  value="adventurous"
+                />
+                <label for="adventurous">Adventurous</label>
+              </div>
+              <div class="inputContainer">
+                <input id="mellow" type="radio" name="mood" value="mellow" />
+                <label for="mellow">Mellow</label>
+              </div>
+              <div class="inputContainer">
+                <input id="angry" type="radio" name="mood" value="angry" />
+                <label for="angry">Angry</label>
+              </div>
+            </div>
+          </fieldset>
         </form>
 
         <div class="submitContainer">
-            <button type="submit" class="submitMood">
-                <a href="#sectionTwo"><i class="fas fa-chevron-down"></i></a>
-            </button>
+          <button type="submit" class="submitMood">
+            <a href="#sectionTwo"><i class="fas fa-chevron-down"></i></a>
+          </button>
         </div>
+      </div>
     </section>
-
-    <section class="questionTwoContainer" id="sectionTwo">
-        <h2>What is your wine preference?</h2>
-        <form class="wineForm wrapper" action="">
-            <fieldset class="userDrink">
-                <div class="box">
-                    <input id="red" type="radio" name="drink" value="red" checked="true">
-                    <label for="red">
-                        <img src="./assets/redWineGlass240.png" alt="glass of red wine">
-                    </label>
-                </div>
-                <div class="box">
-                    <input id="white" type="radio" name="drink" value="white">
-                	<label for="white">
-                        <img src="./assets/whiteWineGlass240.png" alt="glass of white wine">
-                	</label>
-                </div> 
-                <div class="box">
-                    <input id="other" type="radio" name="drink" value="other">
-                    <label for="other">
-                        <img src="./assets/otherWineGlass240.png" alt="glass of wine with white liquid">
-                    </label>
-                </div>
-            </fieldset>
-        </form>
-
-        <h3>Click the bottle for your result</h3>
-
-        <div class="submitContainer">
+    <!-- WINE SELECT SECTION -->
+    <section class="sectionTwo hide" id="sectionTwo">
+      <div class="questionTwoContainer">
+          <h2>What is your wine preference?</h2>
+          <form class="wineForm wrapper" action="">
+            <div class="userDrink">
+              <div class="box">
+                <input
+                  id="red"
+                  type="radio"
+                  name="drink"
+                  value="red"
+                  checked="true"
+                />
+                <label for="red">
+                  <img src="./assets/redWineGlass240.png" alt="glass of red wine" />
+                </label>
+              </div>
+              <div class="box">
+                <input id="white" type="radio" name="drink" value="white" />
+                <label for="white">
+                  <img
+                    src="./assets/whiteWineGlass240.png"
+                    alt="glass of white wine"
+                  />
+                </label>
+              </div>
+              <div class="box">
+                <input id="other" type="radio" name="drink" value="other" />
+                <label for="other">
+                  <img
+                    src="./assets/otherWineGlass240.png"
+                    alt="glass of wine with white liquid"
+                  />
+                </label>
+              </div>
+            </div>
+          </form>
+    
+          <h3>Click the bottle for your result</h3>
+    
+          <div class="submitContainer">
             <button type="submit" class="submitWine">
-                <a href="#result"><img class="bottleButton" src="./assets/wineBottle100.png" alt="green bottle"></a>
+              <a href="#result"
+                ><img
+                  class="bottleButton"
+                  src="./assets/wineBottle100.png"
+                  alt="green bottle"
+              /></a>
             </button>
-        </div>
+          </div>
+      </div>
     </section>
 
-    <div class="result" id="result">
-
-    </div>
+    <!-- RESULT SECTION -->
+    <section class="sectionThree hide" id="result">
+    <div class="result" ></div>
+    </section>
 
     <footer>
-        <p>© Gabe Kugelmass 2019</p>
+      <p>© Gabe Kugelmass 2019</p>
     </footer>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/script.js"></script>
-    
-</body>
+  </body>
 </html>

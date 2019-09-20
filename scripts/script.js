@@ -145,7 +145,7 @@ wineApp.wineChoice = {
         varietal: "Merlot",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        img: "./assets/mcmannisMerlot.png.png",
+        img: "./assets/mcmannisMerlot.png",
         alt: "bottle of red wine from California"
       },
       {
@@ -441,68 +441,118 @@ wineApp.wineChoice = {
     angry: [
       {
         varietal: "Rosé",
-        description:
-          "Because only rosé will turn that anger into joy!",
+        description: "Because only rosé will turn that anger into joy!",
         img: "./assets/whisperingAngel.png",
         alt: "bottle of rosé wine"
       }
     ]
   }
 };
-//SAVE SMOOTHSCROLL PLUGIN AS A FUNCTION
-wineApp.smoothScroll= function(){
-    $('a').smoothScroll({
-        speed: 800
-    });
-}
+
+//RESTART FUNCTION DEFINED
+wineApp.restart = function() {
+  $(`.reset`).on(`click`, function(event) {
+    event.preventDefault();
+    $(`html, body`).animate(
+      {
+        scrollTop: $(`#header`).offset().top
+      },
+      1000,
+      function() {
+        location.hash = ``;
+        location.reload(true);
+      }
+    );
+  });
+};
+
+// SMOOTH SCROLL FUNCTION DEFINED
+wineApp.smoothScroll = function() {
+  $("a").on(`click`, function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      const locationHash = this.hash;
+      $(`html`).animate(
+        {
+          scrollTop: $(locationHash).offset().top
+        },
+        800,
+        `swing`,
+        function() {
+          window.location.hash = locationHash;
+        }
+      );
+    }
+  });
+};
 
 //FUNCTION TO GET RANDOM SELECTION FROM ARRAY
-    const getRandomNumberFromArray = function (array) {
-        const randomNum = Math.floor(Math.random() * array.length);
-        return array[randomNum];
-    };
+const getRandomNumberFromArray = function(array) {
+  const randomNum = Math.floor(Math.random() * array.length);
+  return array[randomNum];
+};
 
 //FUNCTION TO PICK WINE BASED ON USER CHOICE
-    wineApp.getWine = function(){
-    $('.result').hide();
-    //listen for submit of user choices
-    $('.submitMood').on('click', function(event) {
-        event.preventDefault();
+wineApp.getWine = function() {
+  $(".bottleButton").on("click", function(event) {
+    event.preventDefault();
+    $(".sectionOne").addClass("show");
+    $(".sectionTwo").addClass("show");
+  });
+  //listen for submit of user choices
+  $(".submitMood").on("click", function(event) {
+    event.preventDefault();
     //create variable to store user mood choice
-    wineApp.userMood = $('input[name=mood]:checked').val()
-        $('.result').show();
-    });
-    
-    //listen for submit of user wine preference
-    $('.submitWine').on('click', function(event){
-        event.preventDefault();
+    wineApp.userMood = $("input[name=mood]:checked").val();
+    $(".sectionThree").addClass("show");
+  });
+
+  //listen for submit of user wine preference
+  $(".submitWine").on("click", function(event) {
+    event.preventDefault();
     //create variable to store user wine choice
-        const userWine = $('input[name=drink]:checked').val()
+    const userWine = $("input[name=drink]:checked").val();
     //select appropriate object from wineChoices object based on user choice
-        const wineObject = wineApp.wineChoice[userWine];
-        const wineArray = wineObject[wineApp.userMood];
-        const wineSelection = getRandomNumberFromArray(wineArray);
-        //display results on the screen
-        $('.result').html(`<div class="wrapper"><h2 class="choice">${wineSelection.varietal}</h2><p>${wineSelection.description}</p><img src="${wineSelection.img}" alt="${wineSelection.alt}"><div class="buttonContainer"><button class="newMood"><h3>Choose a different mood</h3></button></div></div>`);
-        $('.buttonContainer').append(`<button class="reset"><h3>Reset</h3></button>`);
-        $('.result').on('click', '.newMood', function () {
-            $('form').trigger('reset');
-            $("html, body").animate({ scrollTop: $('.questionOneContainer').offset().top }, 1000);
-        });
-        $('.reset').on('click', function() {
-            location.reload(true);
-        });
+    const wineObject = wineApp.wineChoice[userWine];
+    const wineArray = wineObject[wineApp.userMood];
+    const wineSelection = getRandomNumberFromArray(wineArray);
+    //display results on the screen
+    $(".result").html(
+      `<div class="wrapper">
+        <h2 class="choice">${wineSelection.varietal}</h2>
+        <p class="wineDescription">${wineSelection.description}</p>
+        <img src="${wineSelection.img}" alt="${wineSelection.alt}">
+        <div class="buttonContainer">
+         <button class="newMood">
+          <h3>Choose a different mood</h3>
+          </button>  
+        </div>
+      </div>`
+    );
+    $(".buttonContainer").append(
+      `<button class="reset">
+        <h3>Reset</h3>
+      </button>`
+    );
+    $(".result").on("click", ".newMood", function() {
+      $("form").trigger("reset");
+      $("html, body").animate(
+        { scrollTop: $(".questionOneContainer").offset().top },
+        1000
+      );
     });
+    wineApp.restart();
+  });
 };
 
 //APP INIT FUNCTION
-    wineApp.init = function(){
-        wineApp.smoothScroll();
-        wineApp.getWine();
-    };
+wineApp.init = function() {
+  wineApp.smoothScroll();
+  wineApp.getWine();
+};
 
 //DOC READY
-    
-    $(function () {
-        wineApp.init();
-    });
+
+$(function() {
+  wineApp.init();
+});
