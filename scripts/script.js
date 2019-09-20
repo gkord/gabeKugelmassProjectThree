@@ -497,19 +497,21 @@ wineApp.getWine = function() {
   $(".bottleButton").on("click", function(event) {
     event.preventDefault();
     $(".sectionOne").addClass("show");
-    $(".sectionTwo").addClass("show");
+   
   });
   //listen for submit of user choices
   $(".submitMood").on("click", function(event) {
     event.preventDefault();
     //create variable to store user mood choice
     wineApp.userMood = $("input[name=mood]:checked").val();
-    $(".sectionThree").addClass("show");
+     $(".sectionTwo").addClass("show");
+    
   });
 
   //listen for submit of user wine preference
   $(".submitWine").on("click", function(event) {
     event.preventDefault();
+    $(".sectionThree").addClass("show");
     //create variable to store user wine choice
     const userWine = $("input[name=drink]:checked").val();
     //select appropriate object from wineChoices object based on user choice
